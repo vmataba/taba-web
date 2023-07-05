@@ -1,0 +1,40 @@
+.profile-image img{
+    width: 80%;
+}
+.profile-image{
+    text-align: center;
+    height: 100vh
+}
+
+.card{
+    margin-top: 0;
+}
+
+.card-image{
+    text-align: center !important;
+}
+
+.card-title{
+    color: black !important;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    opacity: .6;
+}
+
+.role{
+    font-weight: bold;
+    color: var(--color-primary);
+    padding-top: 5px;
+}
+
+.introduction{
+    border-left: 5px solid #cccc;
+}
+
+.skills{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}

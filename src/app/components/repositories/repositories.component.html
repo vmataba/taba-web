@@ -1,0 +1,15 @@
+<div *ngIf="loading$ | async">
+    Fetching repositories ...
+</div>
+<div *ngIf="(reposistories$ | async) as reposistories">
+    <div class="search">
+        <i class="material-icons">search</i>
+        <input #input type="text" placeholder="Type to search repositories ..." (keyup)="readKeyword(input.value)">
+    </div>
+    <div class="row">
+        <div class="col s3" *ngFor="let repository of reposistories | filter:keyword">
+            <app-repository [respository]="repository"></app-repository>
+        </div>
+    </div>
+    <p class="no-repositories" *ngIf="(reposistories | filter:keyword).length == 0">No results found</p>
+</div>

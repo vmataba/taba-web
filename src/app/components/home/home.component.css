@@ -1,0 +1,18 @@
+.home{
+   /* height: 90%;
+   overflow-y: scroll;  */
+}
+.heading{
+    font-family: Poppins;
+    margin-top: 28px;
+}
+.github{
+    margin-top: 12px;
+}
+.section-heading{
+    color: var(--color-primary);
+    font-family: Poppins;
+}
+.topbar{
+    margin-top: 30px;
+}

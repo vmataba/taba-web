@@ -1,0 +1,12 @@
+.app{
+   display: flex;
+}
+
+.sidebar{
+    width: 200px;
+}
+.home{
+    margin-left: 180px;
+    margin-right: 50px;
+    width: calc(100% - 180px);
+}   

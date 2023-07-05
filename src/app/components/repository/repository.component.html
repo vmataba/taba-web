@@ -1,0 +1,27 @@
+<div class="repository">
+    <p class="title">
+        <i class="material-icons">dehaze</i>
+        <span class="name"> 
+            {{respository.name}}
+        </span>
+    </p>
+    <p class="description" *ngIf="respository.description else noDescription">
+        {{respository.description}}
+    </p>
+    <ng-template #noDescription>
+        <p class="no-description">No description was provided</p>
+    </ng-template>
+    <div class="bottom">
+        <div class="language" *ngIf="respository.language">
+            <i class="material-icons" [class.java]="respository.language == 'Java'"
+                [class.php]="respository.language == 'PHP'" [class.python]="respository.language == 'Python'"
+                [class.typescript]="respository.language == 'TypeScript'"
+                [class.html]="respository.language == 'HTML'">brightness_1</i>
+            <span>{{respository.language}}</span>
+        </div>
+        <div class="star-gazers">
+            <i class="material-icons" [class.star-full]="respository.stargazers_count > 0">star</i>
+            <span class="star-gazers-count">{{respository.stargazers_count}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+.repositories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.search {
+    width: 30%;
+    margin-left: auto;
+    margin-bottom: 50px;
+    position: relative;
+    right: 45px;
+
+}
+
+.search .material-icons {
+    color: #ccc;
+    position: absolute;
+    bottom: 15px;
+    z-index: 2;
+}
+
+.search input {
+    padding-left: 25px;
+    z-index: 1;
+}
+
+.search:hover {
+    width: 33%;
+    transition: .4s ease;
+}
+
+.search:not(:hover) {
+    width: 30%;
+    transition: .3s ease;
+}
+
+.no-repositories {
+    text-align: center;
+}

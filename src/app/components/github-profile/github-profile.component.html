@@ -1,0 +1,7 @@
+<div class="profile">
+    <p *ngIf="loading$ | async">Fetching profile details ... </p>
+    <div *ngIf="(loaded$ | async) && (profile$ | async) as profile">
+       <img [src]="profile.avatar_url" alt="Profile Image" class="profile-image">
+       <p class="name">{{profile.name}}</p>
+    </div>
+</div>

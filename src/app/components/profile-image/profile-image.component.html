@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-image">
+    <img [src]="path">
+    <p class="card-title">{{name}}</p>
+    <p class="role">{{role}} | {{email}}</p>
+  </div>
+  <div class="card-content">
+    <ul class="collectio">
+      <app-chips *ngFor="let skill of skills" [text]="skill"></app-chips>
+    </ul>
+    <blockquote class="introduction">
+      As an experienced developer with a passion for learning,
+      I thrive on adapting to and applying new methodologies and technologies.
+      With a solid background in android and web programming,
+      I bring over 6 years of hands-on experience to every project I work on.
+      My commitment to staying up-to-date with the latest industry trends and best practices ensures
+      that I deliver high-quality results that meet and exceed client expectations.
+    </blockquote>
+  </div>
+  <div class="card-action">
+    <a [href]="linkedin" target="_blank">LinkedIn</a>
+    <a [href]="github" target="_blank">Github</a>
+    <a [href]="twitter" target="_blank">Twitter</a>
+  </div>
+</div>

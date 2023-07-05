@@ -1,0 +1,22 @@
+.chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    padding-right: 7px;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    margin: 5px;
+  }
+  
+  .chip-text {
+    margin-left: 5px;
+  }
+  
+  .chip-close {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .chip-close:hover {
+    color: red;
+  }

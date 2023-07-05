@@ -1,0 +1,12 @@
+.profile{
+    text-align: center;
+}
+.profile-image{
+    aspect-ratio: 1/1;
+    width: 75px;
+    border-radius: 100%;
+}
+
+.name{
+    font-size: medium;
+}
